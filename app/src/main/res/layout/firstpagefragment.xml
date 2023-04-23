@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_second_container"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_level20">
+            <SearchView
+                android:id="@+id/first_search_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="5"
+                android:layout_marginLeft="10dp"
+                android:iconifiedByDefault="false"
+                android:focusable="false"
+                android:background="@drawable/searchview_shape"/>
+            <Button
+                android:id="@+id/first_search_bt"
+                android:text="搜索"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <!--轮播图-->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/carousel_vp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/back"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/size_level6"
+                android:text="@string/title"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/first_img_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingTop="70dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/first_img_3" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="75dp"
+                        android:background="@drawable/first_img_1" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="320dp"
+                android:id="@+id/title_context_1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/title_context_1"
+                android:textSize="@dimen/size_level9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="180dp"
+                android:id="@+id/title_context_2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/title_context_2"
+                android:textSize="@dimen/size_level7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="330dp"
+                android:id="@+id/title_context_3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/title_context_3"
+                android:textSize="@dimen/size_level7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

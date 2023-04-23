@@ -1,0 +1,76 @@
+{
+  materials: [
+    {
+      name: 'Metal_dark',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.019599999999999999,
+            0.019599999999999999,
+            0.019599999999999999,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Leather',
+      parameters: [
+        {
+          baseColor: '93',
+        },
+        {
+          baseColorTint: [
+            0.94899999999999995,
+            0.94899999999999995,
+            0.94899999999999995,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/chair.obj',
+    name: 'chair',
+    recenter: 'root',
+    scale: 0.019956999999999999,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models\\93.jpg',
+      name: '93',
+      pipeline_name: 'D:\\New folder 2\\93.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
